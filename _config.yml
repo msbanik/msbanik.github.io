@@ -9,8 +9,8 @@ twitter_username: msbanik
 github_username: msbanik
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
-redcarpet:
+kramdown:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]

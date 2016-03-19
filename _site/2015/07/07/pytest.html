@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>PyTest</title>
-  <meta name="description" content="Why I want to move away from unittest* Have to write boilerplate code* Not PEP 8 complaint* Don&#39;t have mock or patch functionalities  ">
+  <meta name="description" content="Why I want to move away from unittest* Have to write boilerplate code* Not PEP 8 complaint* Don’t have mock or patch functionalities  ">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://msbanik.com/2015/07/07/pytest.html">
@@ -57,104 +57,122 @@
   </header>
 
   <article class="post-content">
-    <p>Why I want to move away from unittest<br>
-* Have to write boilerplate code<br>
-* Not PEP 8 complaint<br>
-* Don&#39;t have mock or patch functionalities  </p>
+    <p>Why I want to move away from unittest<br />
+* Have to write boilerplate code<br />
+* Not PEP 8 complaint<br />
+* Don’t have mock or patch functionalities  </p>
 
-<p>What&#39;s in <a href="http://pytest.org/latest/">pytest</a> that&#39;s makes me excited!  </p>
-
-<ul>
-<li>Function test code</li>
-</ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">test_sum</span><span class="p">():</span>
-    <span class="k">assert</span> <span class="nb">sum</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span> <span class="o">==</span> <span class="mi">6</span>
-</code></pre></div>
-<ul>
-<li>Intuitive context manager for raising Exception</li>
-</ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">pytest</span> <span class="kn">import</span> <span class="n">raises</span>
-<span class="k">def</span> <span class="nf">test_cast</span><span class="p">():</span>
-    <span class="k">with</span> <span class="n">raises</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">):</span>
-        <span class="nb">int</span><span class="p">(</span><span class="bp">None</span><span class="p">)</span>
-</code></pre></div>
-<ul>
-<li><p>Related tests can be grouped into a class</p></li>
-<li><p>List of builtin fixtures</p>
+<p>What’s in <a href="http://pytest.org/latest/">pytest</a> that’s makes me excited!  </p>
 
 <ul>
-<li>py.test -q --fixtures</li>
-</ul></li>
-<li><p>Configuration (.ini) file support</p></li>
-<li><p>Support creating custom assertion</p></li>
+  <li>Function test code</li>
 </ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">test_foocompare</span> <span class="kn">import</span> <span class="n">Foo</span>
-<span class="k">def</span> <span class="nf">pytest_assertrepr_compare</span><span class="p">(</span><span class="n">op</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">left</span><span class="p">,</span> <span class="n">Foo</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">Foo</span><span class="p">)</span> <span class="ow">and</span> <span class="n">op</span> <span class="o">==</span> <span class="s">&quot;==&quot;</span><span class="p">:</span>
-     <span class="k">return</span> <span class="p">[</span><span class="s">&#39;Comparing Foo instances:&#39;</span><span class="p">,</span>
-               <span class="s">&#39;   vals: </span><span class="si">%s</span><span class="s"> != </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">left</span><span class="o">.</span><span class="n">val</span><span class="p">,</span> <span class="n">right</span><span class="o">.</span><span class="n">val</span><span class="p">)]</span>
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span>
-         <span class="bp">self</span><span class="o">.</span><span class="n">val</span> <span class="o">=</span> <span class="n">val</span>
 
-<span class="k">def</span> <span class="nf">test_compare</span><span class="p">():</span>
-    <span class="n">f1</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">f2</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-    <span class="k">assert</span> <span class="n">f1</span> <span class="o">==</span> <span class="n">f2</span>               
-</code></pre></div>
-<ul>
-<li>Writing test fixture</li>
-</ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">pytest</span>
-<span class="nd">@pytest.fixture</span>
-<span class="k">def</span> <span class="nf">smtp</span><span class="p">():</span>
-    <span class="kn">import</span> <span class="nn">smtplib</span>
-    <span class="k">return</span> <span class="n">stmplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s">&#39;gmail.com&#39;</span><span class="p">)</span>
+<pre><code class="language-py">def test_sum():
+    assert sum([1, 2, 3]) == 6
+</code></pre>
 
-<span class="k">def</span> <span class="nf">test_ehlo</span><span class="p">(</span><span class="n">smtp</span><span class="p">):</span>
-    <span class="n">response</span><span class="p">,</span> <span class="n">msg</span> <span class="o">=</span> <span class="n">smtp</span><span class="o">.</span><span class="n">ehlo</span><span class="p">()</span>
-    <span class="k">assert</span> <span class="n">response</span> <span class="o">==</span> <span class="mi">250</span>
-    <span class="k">assert</span> <span class="mi">0</span>
-</code></pre></div>
 <ul>
-<li>Support module, class, and method setup and teardown, <a href="http://pytest.org/latest/xunit_setup.html">more on</a> </li>
+  <li>Intuitive context manager for raising Exception</li>
 </ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">setup_function</span><span class="p">(</span><span class="n">function</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; setup any state tied to the execution of the given function.</span>
-<span class="sd">    Invoked for every test function in the module.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
 
-<span class="k">def</span> <span class="nf">teardown_function</span><span class="p">(</span><span class="n">function</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; teardown any state that was previously setup with a setup_function</span>
-<span class="sd">    call.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-</code></pre></div>
-<ul>
-<li>Support <a href="http://pytest.org/latest/monkeypatch.html">monkeypatching</a></li>
-</ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="kn">import</span> <span class="nn">os</span>
-<span class="k">def</span> <span class="nf">getssh</span><span class="p">():</span>
-    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s">&#39;~admin&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">test_mytest</span><span class="p">(</span><span class="n">monkeypatch</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">mockreturn</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s">&#39;/abc&#39;</span>
-    <span class="n">monkeypatch</span><span class="o">.</span><span class="n">setattr</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="p">,</span> <span class="s">&#39;expanduser&#39;</span><span class="p">,</span> <span class="n">mockreturn</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">getssh</span><span class="p">()</span>
-    <span class="k">assert</span> <span class="n">x</span> <span class="o">==</span> <span class="s">&#39;/abc&#39;</span>
-</code></pre></div>
-<ul>
-<li><a href="http://pytest.org/latest/skipping.html">Skip if condition</a></li>
-</ul>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="n">skipif</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">reason</span><span class="o">=</span><span class="s">&#39;requires 3.3&#39;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">test_function</span><span class="p">():</span>
-    <span class="o">...</span>
+<pre><code class="language-py">from pytest import raises
+def test_cast():
+    with raises(TypeError):
+        int(None)
+</code></pre>
 
-<span class="n">minversion</span> <span class="o">=</span> <span class="n">pytest</span><span class="o">.</span><span class="n">mark</span><span class="o">.</span><span class="n">skipif</span><span class="p">(</span><span class="n">mymodule</span><span class="o">.</span><span class="n">__versioninfo__</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
-                                <span class="n">reason</span><span class="o">=</span><span class="s">&quot;at least mymodule-1.1 required&quot;</span><span class="p">)</span>
-<span class="nd">@minversion</span>
-<span class="k">def</span> <span class="nf">test_function</span><span class="p">():</span>
-    <span class="o">...</span>    
-</code></pre></div>
+<ul>
+  <li>
+    <p>Related tests can be grouped into a class</p>
+  </li>
+  <li>List of builtin fixtures
+    <ul>
+      <li>py.test -q –fixtures</li>
+    </ul>
+  </li>
+  <li>
+    <p>Configuration (.ini) file support</p>
+  </li>
+  <li>Support creating custom assertion</li>
+</ul>
+
+<pre><code class="language-py">from test_foocompare import Foo
+def pytest_assertrepr_compare(op, left, right):
+    if isinstance(left, Foo) and isinstance(right, Foo) and op == "==":
+     return ['Comparing Foo instances:',
+               '   vals: %s != %s' % (left.val, right.val)]
+class Foo:
+    def __init__(self, val):
+         self.val = val
+
+def test_compare():
+    f1 = Foo(1)
+    f2 = Foo(2)
+    assert f1 == f2               
+</code></pre>
+
+<ul>
+  <li>Writing test fixture</li>
+</ul>
+
+<pre><code class="language-py">import pytest
+@pytest.fixture
+def smtp():
+    import smtplib
+    return stmplib.SMTP('gmail.com')
+
+def test_ehlo(smtp):
+    response, msg = smtp.ehlo()
+    assert response == 250
+    assert 0
+</code></pre>
+
+<ul>
+  <li>Support module, class, and method setup and teardown, <a href="http://pytest.org/latest/xunit_setup.html">more on</a> </li>
+</ul>
+
+<pre><code class="language-py">def setup_function(function):
+    """ setup any state tied to the execution of the given function.
+    Invoked for every test function in the module.
+    """
+
+def teardown_function(function):
+    """ teardown any state that was previously setup with a setup_function
+    call.
+    """
+</code></pre>
+
+<ul>
+  <li>Support <a href="http://pytest.org/latest/monkeypatch.html">monkeypatching</a></li>
+</ul>
+
+<pre><code class="language-py">import os
+def getssh():
+    return os.path.expanduser('~admin')
+def test_mytest(monkeypatch):
+    def mockreturn(path):
+        return '/abc'
+    monkeypatch.setattr(os.path, 'expanduser', mockreturn)
+    x = getssh()
+    assert x == '/abc'
+</code></pre>
+
+<ul>
+  <li><a href="http://pytest.org/latest/skipping.html">Skip if condition</a></li>
+</ul>
+
+<pre><code class="language-py">skipif(sys.version_info &lt; (3,3), reason='requires 3.3')
+def test_function():
+    ...
+
+minversion = pytest.mark.skipif(mymodule.__versioninfo__ &lt; (1,1),
+                                reason="at least mymodule-1.1 required")
+@minversion
+def test_function():
+    ...    
+</code></pre>
+
 <p>Reference
 <a href="http://pytest.org/latest/contents.html#toc">Documentation</a></p>
 

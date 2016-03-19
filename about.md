@@ -4,7 +4,10 @@ title: About
 permalink: /about/
 ---
 
-* Author: Madhusudan Banik
-* Github: http://github.com/msbanik
+Madhusudan Banik (msbanik @ gmail)  
+Software Engineer, Nokia, USA. 
+
 * LinkedIn: http://www.linkedin.com/in/msbanik
+* Github: http://github.com/msbanik
+* TopCoder: https://www.topcoder.com/members/msbanik/
 * Twitter: https://twitter.com/msbanik

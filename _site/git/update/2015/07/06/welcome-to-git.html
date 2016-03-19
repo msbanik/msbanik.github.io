@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Welcome to git!</title>
+  <meta name="description" content="Basic commandsCherry pick a single commit&gt;  git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://msbanik.com/git/update/2015/07/06/welcome-to-git.html">
+  <link rel="alternate" type="application/rss+xml" title="Madhusudan Banik" href="http://msbanik.com/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Welcome to git!</h1>
+     <p class="post-meta">Posted on Jul 6, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="basic-commands">Basic commands</h2>
+<p>Cherry pick a single commit
+&gt;  git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1</p>
+
+<p>Create gitignore file
+&gt; joe python jetbrains &gt; .gitignore</p>
+
+<p>Install git
+&gt; sudo apt-get install git-core bash-completion</p>
+
+<p>Clone repo<br />
+&gt; git clone –branch master –depth 1 https://github.com/nginx/nginx.git</p>
+
+<p>Download a single file from the bitbucket server<br />
+&gt; wget –user=msbanik –ask-password https://bitbucket.org/msbanik/bootstrap/raw/master/bash/aliases/centos.txt</p>
+
+<p>Ammend last commit message<br />
+&gt; git commit –amend -m “New commit message”</p>
+
+<p>Diff against a stash<br />
+&gt; git stash show -p stash@{0}</p>
+
+<p>List stash
+&gt; git stash list</p>
+
+<p>Apply top of stash and remove
+&gt; git stash pop</p>
+
+<p>Undo last commit<br />
+&gt; git reset –soft HEAD~1
+&gt; git reset –hard HEAD~1</p>
+
+<p>CRLF<br />
+&gt; git config core.autocrlf true</p>
+
+<p>Revert changes made to your working copy<br />
+&gt; git checkout .</p>
+
+<p>Revert changes made to the index (i.e., that you have added)<br />
+&gt; git reset</p>
+
+<p>Revert a change that you have committed<br />
+&gt; git revert …</p>
+
+<p>List config
+&gt; git config -l</p>
+
+<p>Remove unstage local changes
+&gt; git checkout path/to/file/to/revert 
+&gt; git checkout – .</p>
+
+<p>Listing branch
+&gt; git branch –list</p>
+
+<p>Remove branch
+&gt; git branch -d branch_name</p>
+
+<p>Create a branch develop, based on origin master
+&gt; git checkout origin/master -b develop</p>
+
+<p>Set upstream or remote tracking for a branch
+&gt; git branch -u origin/master</p>
+
+<p>Store windows password<br />
+&gt; http://gitcredentialstore.codeplex.com/</p>
+
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://msbanik.com target="_blank">Madhusudan Banik</a> 2015<BR />
+
+</div>
+
+
+  </body>
+</html>

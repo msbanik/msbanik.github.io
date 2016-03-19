@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Python reference</title>
-  <meta name="description" content="Installation  sudo apt-get install python-dev  ">
+  <meta name="description" content="Installation&gt; sudo apt-get install python-dev  ">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://msbanik.com/2015/07/07/python.html">
@@ -57,67 +57,63 @@
   </header>
 
   <article class="post-content">
-    <p>Installation  </p>
+    <p>Installation<br />
+&gt; sudo apt-get install python-dev  </p>
 
-<blockquote>
-<p>sudo apt-get install python-dev  </p>
-</blockquote>
+<p>Python performance analysis tools<br />
+http://www.huyng.com/posts/python-performance-analysis/<br />
+https://github.com/brennerm/PyTricks<br />
+http://docs.quantifiedcode.com/python-anti-patterns/index.html  </p>
 
-<p>Python performance analysis tools<br>
-<a href="http://www.huyng.com/posts/python-performance-analysis/">http://www.huyng.com/posts/python-performance-analysis/</a><br>
-<a href="https://github.com/brennerm/PyTricks">https://github.com/brennerm/PyTricks</a><br>
-<a href="http://docs.quantifiedcode.com/python-anti-patterns/index.html">http://docs.quantifiedcode.com/python-anti-patterns/index.html</a>  </p>
-
-<p>Site about python<br>
-<a href="http://reddit.com/r/python">Python subreddit</a><br>
-<a href="http://planetpython.org/">Planetpython</a><br>
-<a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google python style guide</a><br>
-<a href="http://pythonfasterway.uni.me/">Python faster way</a><br>
-<a href="http://www.talkpythontome.com/episodes/all">Podcast</a><br>
-<a href="https://realpython.com/">Realpython</a><br>
-<a href="http://www.pydanny.com/python-decorator-cheatsheet.html">Decorators</a><br>
+<p>Site about python<br />
+<a href="http://reddit.com/r/python">Python subreddit</a><br />
+<a href="http://planetpython.org/">Planetpython</a><br />
+<a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google python style guide</a><br />
+<a href="http://pythonfasterway.uni.me/">Python faster way</a><br />
+<a href="http://www.talkpythontome.com/episodes/all">Podcast</a><br />
+<a href="https://realpython.com/">Realpython</a><br />
+<a href="http://www.pydanny.com/python-decorator-cheatsheet.html">Decorators</a><br />
 <a href="http://pythonpracticeprojects.com/">Python practice projects</a>  </p>
 
-<p>Python module search path<br>
-* python interpreter search <code>site.py</code><br>
-* <code>PYTHONPATH</code><br>
-* Update on code<br>
+<p>Python module search path<br />
+* python interpreter search <code>site.py</code><br />
+* <code>PYTHONPATH</code><br />
+* Update on code<br />
 <code>python
 import sys
-sys.path.append(&#39;path&#39;)
+sys.path.append('path')
 </code></p>
 
 <p>Site-packages location  </p>
-<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s">&#39;from distutils.sysconfig import get_python_lib; print(get_python_lib())&#39;</span>
-</code></pre></div>
-<p>libpython2.7.so.1.0 load problem  </p>
 
-<blockquote>
-<p>sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
-sudo ldconfig</p>
-</blockquote>
+<pre><code class="language-py">python -c 'from distutils.sysconfig import get_python_lib; print(get_python_lib())'
+</code></pre>
+
+<p>libpython2.7.so.1.0 load problem<br />
+&gt; sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
+&gt; sudo ldconfig</p>
 
 <p><a href="https://www.python.org/dev/peps/pep-0008/#programming-recommendations">Programming recommendations</a></p>
 
 <ul>
-<li>Don&#39;t use single letter variable specifically (l, O, I).</li>
-<li>Module name should be all lowercase with underscore, use of underscore is discouraged.</li>
-<li>Try to use short concise module name, some os has restrictions on file name length.</li>
-<li>Extension module in C/C++ (socket.py _socket.c)</li>
-<li>Exception class name should be suffix with Exception or Error</li>
-<li>Prefer &#39;&#39;.join([a,b]) over a+= b</li>
-<li>Prefer is over == for comparing None</li>
-<li>Use functools.total_ordering</li>
-<li>Inherit exception from Exception rather BaseException</li>
-<li>Module comments, docstrings, import(standard, third party, inhouse)</li>
-<li>Put a blank line between each group of import</li>
-<li>Put <strong>all</strong> spec after import</li>
-<li>Absolute import is recommended then relative import</li>
-<li>Wildcard import should be avoided</li>
-<li>For tripple quoted string, always use double quote</li>
-<li>type_ or id_ to avoid conflict with type or id</li>
-<li>Try to answer the question <em>What went wrong?</em> rather <em>A problem occured</em></li>
-<li><a href="https://www.python.org/dev/peps/pep-3151">Lesson learned</a></li>
+  <li>Don’t use single letter variable specifically (l, O, I).</li>
+  <li>Module name should be all lowercase with underscore, use of underscore is discouraged.</li>
+  <li>Try to use short concise module name, some os has restrictions on file name length.</li>
+  <li>Extension module in C/C++ (socket.py _socket.c)</li>
+  <li>Exception class name should be suffix with Exception or Error</li>
+  <li>Prefer ‘‘.join([a,b]) over a+= b</li>
+  <li>Prefer is over == for comparing None</li>
+  <li>Use functools.total_ordering</li>
+  <li>Inherit exception from Exception rather BaseException</li>
+  <li>Module comments, docstrings, import(standard, third party, inhouse)</li>
+  <li>Put a blank line between each group of import</li>
+  <li>Put <strong>all</strong> spec after import</li>
+  <li>Absolute import is recommended then relative import</li>
+  <li>Wildcard import should be avoided</li>
+  <li>For tripple quoted string, always use double quote</li>
+  <li>type_ or id_ to avoid conflict with type or id</li>
+  <li>Try to answer the question <em>What went wrong?</em> rather <em>A problem occured</em></li>
+  <li><a href="https://www.python.org/dev/peps/pep-3151">Lesson learned</a></li>
 </ul>
 
   </article>

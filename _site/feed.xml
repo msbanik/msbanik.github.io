@@ -6,73 +6,69 @@
 </description>
     <link>http://msbanik.com/</link>
     <atom:link href="http://msbanik.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Jul 2015 01:44:19 -0700</pubDate>
-    <lastBuildDate>Tue, 07 Jul 2015 01:44:19 -0700</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Sat, 19 Mar 2016 00:13:26 -0700</pubDate>
+    <lastBuildDate>Sat, 19 Mar 2016 00:13:26 -0700</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Python reference</title>
-        <description>&lt;p&gt;Installation  &lt;/p&gt;
+        <description>&lt;p&gt;Installation&lt;br /&gt;
+&amp;gt; sudo apt-get install python-dev  &lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;sudo apt-get install python-dev  &lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Python performance analysis tools&lt;br /&gt;
+http://www.huyng.com/posts/python-performance-analysis/&lt;br /&gt;
+https://github.com/brennerm/PyTricks&lt;br /&gt;
+http://docs.quantifiedcode.com/python-anti-patterns/index.html  &lt;/p&gt;
 
-&lt;p&gt;Python performance analysis tools&lt;br&gt;
-&lt;a href=&quot;http://www.huyng.com/posts/python-performance-analysis/&quot;&gt;http://www.huyng.com/posts/python-performance-analysis/&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://github.com/brennerm/PyTricks&quot;&gt;https://github.com/brennerm/PyTricks&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://docs.quantifiedcode.com/python-anti-patterns/index.html&quot;&gt;http://docs.quantifiedcode.com/python-anti-patterns/index.html&lt;/a&gt;  &lt;/p&gt;
-
-&lt;p&gt;Site about python&lt;br&gt;
-&lt;a href=&quot;http://reddit.com/r/python&quot;&gt;Python subreddit&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://planetpython.org/&quot;&gt;Planetpython&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://google-styleguide.googlecode.com/svn/trunk/pyguide.html&quot;&gt;Google python style guide&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://pythonfasterway.uni.me/&quot;&gt;Python faster way&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://www.talkpythontome.com/episodes/all&quot;&gt;Podcast&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;https://realpython.com/&quot;&gt;Realpython&lt;/a&gt;&lt;br&gt;
-&lt;a href=&quot;http://www.pydanny.com/python-decorator-cheatsheet.html&quot;&gt;Decorators&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;Site about python&lt;br /&gt;
+&lt;a href=&quot;http://reddit.com/r/python&quot;&gt;Python subreddit&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://planetpython.org/&quot;&gt;Planetpython&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://google-styleguide.googlecode.com/svn/trunk/pyguide.html&quot;&gt;Google python style guide&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://pythonfasterway.uni.me/&quot;&gt;Python faster way&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.talkpythontome.com/episodes/all&quot;&gt;Podcast&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;https://realpython.com/&quot;&gt;Realpython&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.pydanny.com/python-decorator-cheatsheet.html&quot;&gt;Decorators&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://pythonpracticeprojects.com/&quot;&gt;Python practice projects&lt;/a&gt;  &lt;/p&gt;
 
-&lt;p&gt;Python module search path&lt;br&gt;
-* python interpreter search &lt;code&gt;site.py&lt;/code&gt;&lt;br&gt;
-* &lt;code&gt;PYTHONPATH&lt;/code&gt;&lt;br&gt;
-* Update on code&lt;br&gt;
+&lt;p&gt;Python module search path&lt;br /&gt;
+* python interpreter search &lt;code&gt;site.py&lt;/code&gt;&lt;br /&gt;
+* &lt;code&gt;PYTHONPATH&lt;/code&gt;&lt;br /&gt;
+* Update on code&lt;br /&gt;
 &lt;code&gt;python
 import sys
-sys.path.append(&amp;#39;path&amp;#39;)
+sys.path.append(&#39;path&#39;)
 &lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Site-packages location  &lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;n&quot;&gt;python&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;from distutils.sysconfig import get_python_lib; print(get_python_lib())&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;libpython2.7.so.1.0 load problem  &lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
-sudo ldconfig&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;python -c &#39;from distutils.sysconfig import get_python_lib; print(get_python_lib())&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;libpython2.7.so.1.0 load problem&lt;br /&gt;
+&amp;gt; sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
+&amp;gt; sudo ldconfig&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/#programming-recommendations&quot;&gt;Programming recommendations&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Don&amp;#39;t use single letter variable specifically (l, O, I).&lt;/li&gt;
-&lt;li&gt;Module name should be all lowercase with underscore, use of underscore is discouraged.&lt;/li&gt;
-&lt;li&gt;Try to use short concise module name, some os has restrictions on file name length.&lt;/li&gt;
-&lt;li&gt;Extension module in C/C++ (socket.py _socket.c)&lt;/li&gt;
-&lt;li&gt;Exception class name should be suffix with Exception or Error&lt;/li&gt;
-&lt;li&gt;Prefer &amp;#39;&amp;#39;.join([a,b]) over a+= b&lt;/li&gt;
-&lt;li&gt;Prefer is over == for comparing None&lt;/li&gt;
-&lt;li&gt;Use functools.total_ordering&lt;/li&gt;
-&lt;li&gt;Inherit exception from Exception rather BaseException&lt;/li&gt;
-&lt;li&gt;Module comments, docstrings, import(standard, third party, inhouse)&lt;/li&gt;
-&lt;li&gt;Put a blank line between each group of import&lt;/li&gt;
-&lt;li&gt;Put &lt;strong&gt;all&lt;/strong&gt; spec after import&lt;/li&gt;
-&lt;li&gt;Absolute import is recommended then relative import&lt;/li&gt;
-&lt;li&gt;Wildcard import should be avoided&lt;/li&gt;
-&lt;li&gt;For tripple quoted string, always use double quote&lt;/li&gt;
-&lt;li&gt;type_ or id_ to avoid conflict with type or id&lt;/li&gt;
-&lt;li&gt;Try to answer the question &lt;em&gt;What went wrong?&lt;/em&gt; rather &lt;em&gt;A problem occured&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-3151&quot;&gt;Lesson learned&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Don’t use single letter variable specifically (l, O, I).&lt;/li&gt;
+  &lt;li&gt;Module name should be all lowercase with underscore, use of underscore is discouraged.&lt;/li&gt;
+  &lt;li&gt;Try to use short concise module name, some os has restrictions on file name length.&lt;/li&gt;
+  &lt;li&gt;Extension module in C/C++ (socket.py _socket.c)&lt;/li&gt;
+  &lt;li&gt;Exception class name should be suffix with Exception or Error&lt;/li&gt;
+  &lt;li&gt;Prefer ‘‘.join([a,b]) over a+= b&lt;/li&gt;
+  &lt;li&gt;Prefer is over == for comparing None&lt;/li&gt;
+  &lt;li&gt;Use functools.total_ordering&lt;/li&gt;
+  &lt;li&gt;Inherit exception from Exception rather BaseException&lt;/li&gt;
+  &lt;li&gt;Module comments, docstrings, import(standard, third party, inhouse)&lt;/li&gt;
+  &lt;li&gt;Put a blank line between each group of import&lt;/li&gt;
+  &lt;li&gt;Put &lt;strong&gt;all&lt;/strong&gt; spec after import&lt;/li&gt;
+  &lt;li&gt;Absolute import is recommended then relative import&lt;/li&gt;
+  &lt;li&gt;Wildcard import should be avoided&lt;/li&gt;
+  &lt;li&gt;For tripple quoted string, always use double quote&lt;/li&gt;
+  &lt;li&gt;type_ or id_ to avoid conflict with type or id&lt;/li&gt;
+  &lt;li&gt;Try to answer the question &lt;em&gt;What went wrong?&lt;/em&gt; rather &lt;em&gt;A problem occured&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-3151&quot;&gt;Lesson learned&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 00:00:00 -0700</pubDate>
@@ -84,104 +80,122 @@ sudo ldconfig&lt;/p&gt;
     
       <item>
         <title>PyTest</title>
-        <description>&lt;p&gt;Why I want to move away from unittest&lt;br&gt;
-* Have to write boilerplate code&lt;br&gt;
-* Not PEP 8 complaint&lt;br&gt;
-* Don&amp;#39;t have mock or patch functionalities  &lt;/p&gt;
+        <description>&lt;p&gt;Why I want to move away from unittest&lt;br /&gt;
+* Have to write boilerplate code&lt;br /&gt;
+* Not PEP 8 complaint&lt;br /&gt;
+* Don’t have mock or patch functionalities  &lt;/p&gt;
 
-&lt;p&gt;What&amp;#39;s in &lt;a href=&quot;http://pytest.org/latest/&quot;&gt;pytest&lt;/a&gt; that&amp;#39;s makes me excited!  &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Function test code&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Intuitive context manager for raising Exception&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pytest&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raises&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_cast&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;raises&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ne&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Related tests can be grouped into a class&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;List of builtin fixtures&lt;/p&gt;
+&lt;p&gt;What’s in &lt;a href=&quot;http://pytest.org/latest/&quot;&gt;pytest&lt;/a&gt; that’s makes me excited!  &lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;py.test -q --fixtures&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Configuration (.ini) file support&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Support creating custom assertion&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;Function test code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;test_foocompare&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;pytest_assertrepr_compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;op&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;isinstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;op&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;==&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;Comparing Foo instances:&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-               &lt;span class=&quot;s&quot;&gt;&amp;#39;   vals: &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; != &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%s&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-         &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_compare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f2&lt;/span&gt;               
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Writing test fixture&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pytest&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@pytest.fixture&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;smtp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;smtplib&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stmplib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SMTP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;gmail.com&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;def test_sum():
+    assert sum([1, 2, 3]) == 6
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_ehlo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;smtp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;smtp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ehlo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;250&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;Support module, class, and method setup and teardown, &lt;a href=&quot;http://pytest.org/latest/xunit_setup.html&quot;&gt;more on&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt;Intuitive context manager for raising Exception&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setup_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;sd&quot;&gt;&amp;quot;&amp;quot;&amp;quot; setup any state tied to the execution of the given function.&lt;/span&gt;
-&lt;span class=&quot;sd&quot;&gt;    Invoked for every test function in the module.&lt;/span&gt;
-&lt;span class=&quot;sd&quot;&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;teardown_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;sd&quot;&gt;&amp;quot;&amp;quot;&amp;quot; teardown any state that was previously setup with a setup_function&lt;/span&gt;
-&lt;span class=&quot;sd&quot;&gt;    call.&lt;/span&gt;
-&lt;span class=&quot;sd&quot;&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;Support &lt;a href=&quot;http://pytest.org/latest/monkeypatch.html&quot;&gt;monkeypatching&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;os&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getssh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expanduser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;~admin&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_mytest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;monkeypatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mockreturn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/abc&amp;#39;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;monkeypatch&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setattr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;os&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;expanduser&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mockreturn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getssh&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;assert&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;/abc&amp;#39;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://pytest.org/latest/skipping.html&quot;&gt;Skip if condition&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-py&quot; data-lang=&quot;py&quot;&gt;&lt;span class=&quot;n&quot;&gt;skipif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version_info&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reason&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;requires 3.3&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;from pytest import raises
+def test_cast():
+    with raises(TypeError):
+        int(None)
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;span class=&quot;n&quot;&gt;minversion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pytest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mark&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;skipif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mymodule&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__versioninfo__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
-                                &lt;span class=&quot;n&quot;&gt;reason&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;at least mymodule-1.1 required&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;nd&quot;&gt;@minversion&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Related tests can be grouped into a class&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List of builtin fixtures
+    &lt;ul&gt;
+      &lt;li&gt;py.test -q –fixtures&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Configuration (.ini) file support&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Support creating custom assertion&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;from test_foocompare import Foo
+def pytest_assertrepr_compare(op, left, right):
+    if isinstance(left, Foo) and isinstance(right, Foo) and op == &quot;==&quot;:
+     return [&#39;Comparing Foo instances:&#39;,
+               &#39;   vals: %s != %s&#39; % (left.val, right.val)]
+class Foo:
+    def __init__(self, val):
+         self.val = val
+
+def test_compare():
+    f1 = Foo(1)
+    f2 = Foo(2)
+    assert f1 == f2               
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Writing test fixture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;import pytest
+@pytest.fixture
+def smtp():
+    import smtplib
+    return stmplib.SMTP(&#39;gmail.com&#39;)
+
+def test_ehlo(smtp):
+    response, msg = smtp.ehlo()
+    assert response == 250
+    assert 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support module, class, and method setup and teardown, &lt;a href=&quot;http://pytest.org/latest/xunit_setup.html&quot;&gt;more on&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;def setup_function(function):
+    &quot;&quot;&quot; setup any state tied to the execution of the given function.
+    Invoked for every test function in the module.
+    &quot;&quot;&quot;
+
+def teardown_function(function):
+    &quot;&quot;&quot; teardown any state that was previously setup with a setup_function
+    call.
+    &quot;&quot;&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Support &lt;a href=&quot;http://pytest.org/latest/monkeypatch.html&quot;&gt;monkeypatching&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;import os
+def getssh():
+    return os.path.expanduser(&#39;~admin&#39;)
+def test_mytest(monkeypatch):
+    def mockreturn(path):
+        return &#39;/abc&#39;
+    monkeypatch.setattr(os.path, &#39;expanduser&#39;, mockreturn)
+    x = getssh()
+    assert x == &#39;/abc&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pytest.org/latest/skipping.html&quot;&gt;Skip if condition&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;skipif(sys.version_info &amp;lt; (3,3), reason=&#39;requires 3.3&#39;)
+def test_function():
+    ...
+
+minversion = pytest.mark.skipif(mymodule.__versioninfo__ &amp;lt; (1,1),
+                                reason=&quot;at least mymodule-1.1 required&quot;)
+@minversion
+def test_function():
+    ...    
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Reference
 &lt;a href=&quot;http://pytest.org/latest/contents.html#toc&quot;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -196,78 +210,42 @@ sudo ldconfig&lt;/p&gt;
         <title>Linux commands</title>
         <description>&lt;p&gt;List of some useful linux commands&lt;/p&gt;
 
-&lt;p&gt;Adding user&lt;/p&gt;
+&lt;p&gt;Adding user
+&amp;gt; adduser username &lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;adduser username &lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Giving user sudo access
+&amp;gt; visudo&lt;br /&gt;
+&amp;gt; sudo visudo&lt;/p&gt;
 
-&lt;p&gt;Giving user sudo access&lt;/p&gt;
+&lt;p&gt;Add in the end
+&amp;gt; username  ALL=(ALL)   NOPASSWD: ALL&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;visudo&lt;br&gt;
-sudo visudo&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Changing the default shell
+&amp;gt; chsh -s /bin/zsh&lt;/p&gt;
 
-&lt;p&gt;Add in the end&lt;/p&gt;
+&lt;p&gt;List of shells
+&amp;gt; cat /etc/shells&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;username  ALL=(ALL)   NOPASSWD: ALL&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;List recently modified files
+&amp;gt; find . -type f -mmin -5&lt;/p&gt;
 
-&lt;p&gt;Changing the default shell&lt;/p&gt;
+&lt;p&gt;Adding build tools on Centos&lt;br /&gt;
+&amp;gt; sudo yum groupinstall ‘Development Tools’&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;chsh -s /bin/zsh&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Adding build tools on Ubuntu&lt;br /&gt;
+&amp;gt; sudo apt-get install build-essentials&lt;/p&gt;
 
-&lt;p&gt;List of shells&lt;/p&gt;
+&lt;p&gt;Viewing logfile
+&amp;gt; less +F filename&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;cat /etc/shells&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Tail
+&amp;gt; tail -n10; tail -f -n0 nginx_access.log | grep pattern&lt;/p&gt;
 
-&lt;p&gt;List recently modified files&lt;/p&gt;
+&lt;p&gt;Get system limit information
+&amp;gt; ulimit -a&lt;/p&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;find . -type f -mmin -5&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Adding build tools on Centos  &lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;sudo yum groupinstall &amp;#39;Development Tools&amp;#39;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Adding build tools on Ubuntu  &lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;sudo apt-get install build-essentials&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Viewing logfile&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;less +F filename&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Tail&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;tail -n10; tail -f -n0 nginx_access.log | grep pattern&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Get system limit information&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;ulimit -a&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Distribution version information&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;lsb_release -a&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Distribution version information
+&amp;gt; lsb_release -a&lt;/p&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 00:00:00 -0700</pubDate>
         <link>http://msbanik.com/2015/07/07/management.html</link>
@@ -277,21 +255,95 @@ sudo visudo&lt;/p&gt;
       </item>
     
       <item>
+        <title>Welcome to git!</title>
+        <description>&lt;h2 id=&quot;basic-commands&quot;&gt;Basic commands&lt;/h2&gt;
+&lt;p&gt;Cherry pick a single commit
+&amp;gt;  git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1&lt;/p&gt;
+
+&lt;p&gt;Create gitignore file
+&amp;gt; joe python jetbrains &amp;gt; .gitignore&lt;/p&gt;
+
+&lt;p&gt;Install git
+&amp;gt; sudo apt-get install git-core bash-completion&lt;/p&gt;
+
+&lt;p&gt;Clone repo&lt;br /&gt;
+&amp;gt; git clone –branch master –depth 1 https://github.com/nginx/nginx.git&lt;/p&gt;
+
+&lt;p&gt;Download a single file from the bitbucket server&lt;br /&gt;
+&amp;gt; wget –user=msbanik –ask-password https://bitbucket.org/msbanik/bootstrap/raw/master/bash/aliases/centos.txt&lt;/p&gt;
+
+&lt;p&gt;Ammend last commit message&lt;br /&gt;
+&amp;gt; git commit –amend -m “New commit message”&lt;/p&gt;
+
+&lt;p&gt;Diff against a stash&lt;br /&gt;
+&amp;gt; git stash show -p stash@{0}&lt;/p&gt;
+
+&lt;p&gt;List stash
+&amp;gt; git stash list&lt;/p&gt;
+
+&lt;p&gt;Apply top of stash and remove
+&amp;gt; git stash pop&lt;/p&gt;
+
+&lt;p&gt;Undo last commit&lt;br /&gt;
+&amp;gt; git reset –soft HEAD~1
+&amp;gt; git reset –hard HEAD~1&lt;/p&gt;
+
+&lt;p&gt;CRLF&lt;br /&gt;
+&amp;gt; git config core.autocrlf true&lt;/p&gt;
+
+&lt;p&gt;Revert changes made to your working copy&lt;br /&gt;
+&amp;gt; git checkout .&lt;/p&gt;
+
+&lt;p&gt;Revert changes made to the index (i.e., that you have added)&lt;br /&gt;
+&amp;gt; git reset&lt;/p&gt;
+
+&lt;p&gt;Revert a change that you have committed&lt;br /&gt;
+&amp;gt; git revert …&lt;/p&gt;
+
+&lt;p&gt;List config
+&amp;gt; git config -l&lt;/p&gt;
+
+&lt;p&gt;Remove unstage local changes
+&amp;gt; git checkout path/to/file/to/revert 
+&amp;gt; git checkout – .&lt;/p&gt;
+
+&lt;p&gt;Listing branch
+&amp;gt; git branch –list&lt;/p&gt;
+
+&lt;p&gt;Remove branch
+&amp;gt; git branch -d branch_name&lt;/p&gt;
+
+&lt;p&gt;Create a branch develop, based on origin master
+&amp;gt; git checkout origin/master -b develop&lt;/p&gt;
+
+&lt;p&gt;Set upstream or remote tracking for a branch
+&amp;gt; git branch -u origin/master&lt;/p&gt;
+
+&lt;p&gt;Store windows password&lt;br /&gt;
+&amp;gt; http://gitcredentialstore.codeplex.com/&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jul 2015 12:42:26 -0700</pubDate>
+        <link>http://msbanik.com/git/update/2015/07/06/welcome-to-git.html</link>
+        <guid isPermaLink="true">http://msbanik.com/git/update/2015/07/06/welcome-to-git.html</guid>
+        
+        
+        <category>git</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
         <title>Formatting Samples</title>
         <description>&lt;p&gt;Arctic Fox supports GFM!
 The following text has been taken from &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet&quot;&gt;this page&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1&gt;H1&lt;/h1&gt;
-
-&lt;h2&gt;H2&lt;/h2&gt;
-
-&lt;h3&gt;H3&lt;/h3&gt;
-
-&lt;h4&gt;H4&lt;/h4&gt;
-
-&lt;h5&gt;H5&lt;/h5&gt;
-
-&lt;h6&gt;H6&lt;/h6&gt;
+&lt;h1 id=&quot;h1&quot;&gt;H1&lt;/h1&gt;
+&lt;p&gt;## H2
+### H3
+#### H4
+##### H5
+###### H6&lt;/p&gt;
 
 &lt;p&gt;Emphasis, aka italics, with &lt;em&gt;asterisks&lt;/em&gt; or &lt;em&gt;underscores&lt;/em&gt;.&lt;/p&gt;
 
@@ -299,34 +351,33 @@ The following text has been taken from &lt;a href=&quot;https://github.com/adam-
 
 &lt;p&gt;Combined emphasis with &lt;strong&gt;asterisks and &lt;em&gt;underscores&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;Strikethrough uses two tildes. &lt;del&gt;Scratch this.&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;Strikethrough uses two tildes. ~~Scratch this.~~&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;First ordered list item&lt;/li&gt;
-&lt;li&gt;Another item
+  &lt;li&gt;First ordered list item&lt;/li&gt;
+  &lt;li&gt;Another item
+    &lt;ul&gt;
+      &lt;li&gt;Unordered sub-list. &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Actual numbers don’t matter, just that it’s a number&lt;/li&gt;
+  &lt;li&gt;Ordered sub-list&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;And another item.  &lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;Unordered sub-list. &lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Actual numbers don&amp;#39;t matter, just that it&amp;#39;s a number
-
-&lt;ol&gt;
-&lt;li&gt;Ordered sub-list&lt;/li&gt;
-&lt;/ol&gt;&lt;/li&gt;
-&lt;li&gt;And another item.&lt;br&gt;&lt;/li&gt;
+    &lt;p&gt;Some text that should be aligned with the above item.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Some text that should be aligned with the above item.&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;Unordered list can use asterisks&lt;/li&gt;
-&lt;li&gt;Or minuses&lt;/li&gt;
-&lt;li&gt;Or pluses&lt;/li&gt;
+  &lt;li&gt;Unordered list can use asterisks&lt;/li&gt;
+  &lt;li&gt;Or minuses&lt;/li&gt;
+  &lt;li&gt;Or pluses&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;I&amp;#39;m an inline-style link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;I’m an inline-style link&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org&quot;&gt;I&amp;#39;m a reference-style link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.mozilla.org&quot;&gt;I’m a reference-style link&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://slashdot.org&quot;&gt;You can use numbers for reference-style link definitions&lt;/a&gt;&lt;/p&gt;
 
@@ -335,69 +386,88 @@ The following text has been taken from &lt;a href=&quot;https://github.com/adam-
 &lt;p&gt;Some text to show that the reference links can follow later.&lt;/p&gt;
 
 &lt;p&gt;Inline &lt;code&gt;code&lt;/code&gt; has &lt;code&gt;back-ticks around&lt;/code&gt; it.&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;JavaScript syntax highlighting&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Python syntax highlighting&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;No language indicated, so no syntax highlighting. 
-But let&amp;#39;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;var s = &quot;JavaScript syntax highlighting&quot;;
+alert(s);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-python&quot;&gt;s = &quot;Python syntax highlighting&quot;
+print s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;No language indicated, so no syntax highlighting. 
+But let&#39;s throw in a &amp;lt;b&amp;gt;tag&amp;lt;/b&amp;gt;.
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;Colons can be used to align columns.&lt;/p&gt;
 
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Tables&lt;/th&gt;
-&lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
-&lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;col 3 is&lt;/td&gt;
-&lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
-&lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;col 2 is&lt;/td&gt;
-&lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
-&lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;zebra stripes&lt;/td&gt;
-&lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
-&lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;$1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;The outer pipes (|) are optional, and you don&amp;#39;t need to make the raw Markdown line up prettily. You can also use inline Markdown.&lt;/p&gt;
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;The outer pipes (&lt;/td&gt;
+      &lt;td&gt;) are optional, and you don’t need to make the raw Markdown line up prettily. You can also use inline Markdown.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Markdown&lt;/th&gt;
-&lt;th&gt;Less&lt;/th&gt;
-&lt;th&gt;Pretty&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;renders&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;1&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Markdown&lt;/th&gt;
+      &lt;th&gt;Less&lt;/th&gt;
+      &lt;th&gt;Pretty&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;Still&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;renders&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;nicely&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;Blockquotes are very handy in email to emulate reply text.
+  &lt;p&gt;Blockquotes are very handy in email to emulate reply text.
 This line is part of the same quote.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Quote break.&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;This is a very long line that will still be quoted properly when it wraps. Oh boy let&amp;#39;s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can &lt;em&gt;put&lt;/em&gt; &lt;strong&gt;Markdown&lt;/strong&gt; into a blockquote. &lt;/p&gt;
+  &lt;p&gt;This is a very long line that will still be quoted properly when it wraps. Oh boy let’s keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can &lt;em&gt;put&lt;/em&gt; &lt;strong&gt;Markdown&lt;/strong&gt; into a blockquote. &lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 25 May 2015 00:00:00 -0700</pubDate>
