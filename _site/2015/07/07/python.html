@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Python reference</title>
+  <meta name="description" content="Installation  sudo apt-get install python-dev  ">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://msbanik.com/2015/07/07/python.html">
+  <link rel="alternate" type="application/rss+xml" title="Madhusudan Banik" href="http://msbanik.com/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Python reference</h1>
+     <p class="post-meta">Posted on Jul 7, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Installation  </p>
+
+<blockquote>
+<p>sudo apt-get install python-dev  </p>
+</blockquote>
+
+<p>Python performance analysis tools<br>
+<a href="http://www.huyng.com/posts/python-performance-analysis/">http://www.huyng.com/posts/python-performance-analysis/</a><br>
+<a href="https://github.com/brennerm/PyTricks">https://github.com/brennerm/PyTricks</a><br>
+<a href="http://docs.quantifiedcode.com/python-anti-patterns/index.html">http://docs.quantifiedcode.com/python-anti-patterns/index.html</a>  </p>
+
+<p>Site about python<br>
+<a href="http://reddit.com/r/python">Python subreddit</a><br>
+<a href="http://planetpython.org/">Planetpython</a><br>
+<a href="https://google-styleguide.googlecode.com/svn/trunk/pyguide.html">Google python style guide</a><br>
+<a href="http://pythonfasterway.uni.me/">Python faster way</a><br>
+<a href="http://www.talkpythontome.com/episodes/all">Podcast</a><br>
+<a href="https://realpython.com/">Realpython</a><br>
+<a href="http://www.pydanny.com/python-decorator-cheatsheet.html">Decorators</a><br>
+<a href="http://pythonpracticeprojects.com/">Python practice projects</a>  </p>
+
+<p>Python module search path<br>
+* python interpreter search <code>site.py</code><br>
+* <code>PYTHONPATH</code><br>
+* Update on code<br>
+<code>python
+import sys
+sys.path.append(&#39;path&#39;)
+</code></p>
+
+<p>Site-packages location  </p>
+<div class="highlight"><pre><code class="language-py" data-lang="py"><span class="n">python</span> <span class="o">-</span><span class="n">c</span> <span class="s">&#39;from distutils.sysconfig import get_python_lib; print(get_python_lib())&#39;</span>
+</code></pre></div>
+<p>libpython2.7.so.1.0 load problem  </p>
+
+<blockquote>
+<p>sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
+sudo ldconfig</p>
+</blockquote>
+
+<p><a href="https://www.python.org/dev/peps/pep-0008/#programming-recommendations">Programming recommendations</a></p>
+
+<ul>
+<li>Don&#39;t use single letter variable specifically (l, O, I).</li>
+<li>Module name should be all lowercase with underscore, use of underscore is discouraged.</li>
+<li>Try to use short concise module name, some os has restrictions on file name length.</li>
+<li>Extension module in C/C++ (socket.py _socket.c)</li>
+<li>Exception class name should be suffix with Exception or Error</li>
+<li>Prefer &#39;&#39;.join([a,b]) over a+= b</li>
+<li>Prefer is over == for comparing None</li>
+<li>Use functools.total_ordering</li>
+<li>Inherit exception from Exception rather BaseException</li>
+<li>Module comments, docstrings, import(standard, third party, inhouse)</li>
+<li>Put a blank line between each group of import</li>
+<li>Put <strong>all</strong> spec after import</li>
+<li>Absolute import is recommended then relative import</li>
+<li>Wildcard import should be avoided</li>
+<li>For tripple quoted string, always use double quote</li>
+<li>type_ or id_ to avoid conflict with type or id</li>
+<li>Try to answer the question <em>What went wrong?</em> rather <em>A problem occured</em></li>
+<li><a href="https://www.python.org/dev/peps/pep-3151">Lesson learned</a></li>
+</ul>
+
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://msbanik.com target="_blank">Madhusudan Banik</a> 2015<BR />
+
+</div>
+
+
+  </body>
+</html>

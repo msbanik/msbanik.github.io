@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Linux commands</title>
+  <meta name="description" content="List of some useful linux commands">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://msbanik.com/2015/07/07/management.html">
+  <link rel="alternate" type="application/rss+xml" title="Madhusudan Banik" href="http://msbanik.com/feed.xml" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="site-header">
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <i class="fa fa-navicon fa-lg"></i>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+</div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+     <h1 class="post-title">Linux commands</h1>
+     <p class="post-meta">Posted on Jul 7, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>List of some useful linux commands</p>
+
+<p>Adding user</p>
+
+<blockquote>
+<p>adduser username </p>
+</blockquote>
+
+<p>Giving user sudo access</p>
+
+<blockquote>
+<p>visudo<br>
+sudo visudo</p>
+</blockquote>
+
+<p>Add in the end</p>
+
+<blockquote>
+<p>username  ALL=(ALL)   NOPASSWD: ALL</p>
+</blockquote>
+
+<p>Changing the default shell</p>
+
+<blockquote>
+<p>chsh -s /bin/zsh</p>
+</blockquote>
+
+<p>List of shells</p>
+
+<blockquote>
+<p>cat /etc/shells</p>
+</blockquote>
+
+<p>List recently modified files</p>
+
+<blockquote>
+<p>find . -type f -mmin -5</p>
+</blockquote>
+
+<p>Adding build tools on Centos  </p>
+
+<blockquote>
+<p>sudo yum groupinstall &#39;Development Tools&#39;</p>
+</blockquote>
+
+<p>Adding build tools on Ubuntu  </p>
+
+<blockquote>
+<p>sudo apt-get install build-essentials</p>
+</blockquote>
+
+<p>Viewing logfile</p>
+
+<blockquote>
+<p>less +F filename</p>
+</blockquote>
+
+<p>Tail</p>
+
+<blockquote>
+<p>tail -n10; tail -f -n0 nginx_access.log | grep pattern</p>
+</blockquote>
+
+<p>Get system limit information</p>
+
+<blockquote>
+<p>ulimit -a</p>
+</blockquote>
+
+<p>Distribution version information</p>
+
+<blockquote>
+<p>lsb_release -a</p>
+</blockquote>
+
+  </article>
+
+  <div align="center">
+  	<a href="#">
+  	<i class="fa fa-arrow-circle-up fa-2x"></i>
+  	</a>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+    <div class="footer" align="center">
+
+  Copyright &copy; <a href=http://msbanik.com target="_blank">Madhusudan Banik</a> 2015<BR />
+
+</div>
+
+
+  </body>
+</html>
