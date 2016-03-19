@@ -6,14 +6,17 @@
 </description>
     <link>http://msbanik.com/</link>
     <atom:link href="http://msbanik.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Mar 2016 00:13:26 -0700</pubDate>
-    <lastBuildDate>Sat, 19 Mar 2016 00:13:26 -0700</lastBuildDate>
+    <pubDate>Sat, 19 Mar 2016 00:58:32 -0700</pubDate>
+    <lastBuildDate>Sat, 19 Mar 2016 00:58:32 -0700</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
         <title>Python reference</title>
-        <description>&lt;p&gt;Installation&lt;br /&gt;
-&amp;gt; sudo apt-get install python-dev  &lt;/p&gt;
+        <description>&lt;p&gt;Installation  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sudo apt-get install python-dev  &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Python performance analysis tools&lt;br /&gt;
 http://www.huyng.com/posts/python-performance-analysis/&lt;br /&gt;
@@ -44,9 +47,12 @@ sys.path.append(&#39;path&#39;)
 &lt;pre&gt;&lt;code class=&quot;language-py&quot;&gt;python -c &#39;from distutils.sysconfig import get_python_lib; print(get_python_lib())&#39;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;libpython2.7.so.1.0 load problem&lt;br /&gt;
-&amp;gt; sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
-&amp;gt; sudo ldconfig&lt;/p&gt;
+&lt;p&gt;libpython2.7.so.1.0 load problem  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sudo ln -s /usr/local/lib/libpython2.7.so.1.0 /usr/lib/libpython2.7.so.1.0
+sudo ldconfig&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/#programming-recommendations&quot;&gt;Programming recommendations&lt;/a&gt;&lt;/p&gt;
 
@@ -210,42 +216,78 @@ def test_function():
         <title>Linux commands</title>
         <description>&lt;p&gt;List of some useful linux commands&lt;/p&gt;
 
-&lt;p&gt;Adding user
-&amp;gt; adduser username &lt;/p&gt;
+&lt;p&gt;Adding user  &lt;/p&gt;
 
-&lt;p&gt;Giving user sudo access
-&amp;gt; visudo&lt;br /&gt;
-&amp;gt; sudo visudo&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;adduser username  &lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Add in the end
-&amp;gt; username  ALL=(ALL)   NOPASSWD: ALL&lt;/p&gt;
+&lt;p&gt;Giving user sudo access&lt;/p&gt;
 
-&lt;p&gt;Changing the default shell
-&amp;gt; chsh -s /bin/zsh&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;visudo&lt;br /&gt;
+sudo visudo&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;List of shells
-&amp;gt; cat /etc/shells&lt;/p&gt;
+&lt;p&gt;Add in the end&lt;/p&gt;
 
-&lt;p&gt;List recently modified files
-&amp;gt; find . -type f -mmin -5&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;username  ALL=(ALL)   NOPASSWD: ALL&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Adding build tools on Centos&lt;br /&gt;
-&amp;gt; sudo yum groupinstall ‘Development Tools’&lt;/p&gt;
+&lt;p&gt;Changing the default shell&lt;/p&gt;
 
-&lt;p&gt;Adding build tools on Ubuntu&lt;br /&gt;
-&amp;gt; sudo apt-get install build-essentials&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;chsh -s /bin/zsh&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Viewing logfile
-&amp;gt; less +F filename&lt;/p&gt;
+&lt;p&gt;List of shells&lt;/p&gt;
 
-&lt;p&gt;Tail
-&amp;gt; tail -n10; tail -f -n0 nginx_access.log | grep pattern&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;cat /etc/shells&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Get system limit information
-&amp;gt; ulimit -a&lt;/p&gt;
+&lt;p&gt;List recently modified files&lt;/p&gt;
 
-&lt;p&gt;Distribution version information
-&amp;gt; lsb_release -a&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;find . -type f -mmin -5&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Adding build tools on Centos  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sudo yum groupinstall ‘Development Tools’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Adding build tools on Ubuntu  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sudo apt-get install build-essentials&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Viewing logfile&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;less +F filename&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tail  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;tail -n10; tail -f -n0 nginx_access.log | grep pattern&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Get system limit information&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;ulimit -a&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Distribution version information&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;lsb_release -a&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 07 Jul 2015 00:00:00 -0700</pubDate>
         <link>http://msbanik.com/2015/07/07/management.html</link>
@@ -257,70 +299,133 @@ def test_function():
       <item>
         <title>Welcome to git!</title>
         <description>&lt;h2 id=&quot;basic-commands&quot;&gt;Basic commands&lt;/h2&gt;
-&lt;p&gt;Cherry pick a single commit
-&amp;gt;  git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1&lt;/p&gt;
+&lt;p&gt;Cherry pick a single commit&lt;/p&gt;
 
-&lt;p&gt;Create gitignore file
-&amp;gt; joe python jetbrains &amp;gt; .gitignore&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Install git
-&amp;gt; sudo apt-get install git-core bash-completion&lt;/p&gt;
+&lt;p&gt;Create gitignore file&lt;/p&gt;
 
-&lt;p&gt;Clone repo&lt;br /&gt;
-&amp;gt; git clone –branch master –depth 1 https://github.com/nginx/nginx.git&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;joe python jetbrains &amp;gt; .gitignore&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Download a single file from the bitbucket server&lt;br /&gt;
-&amp;gt; wget –user=msbanik –ask-password https://bitbucket.org/msbanik/bootstrap/raw/master/bash/aliases/centos.txt&lt;/p&gt;
+&lt;p&gt;Install git&lt;/p&gt;
 
-&lt;p&gt;Ammend last commit message&lt;br /&gt;
-&amp;gt; git commit –amend -m “New commit message”&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;sudo apt-get install git-core bash-completion&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Diff against a stash&lt;br /&gt;
-&amp;gt; git stash show -p stash@{0}&lt;/p&gt;
+&lt;p&gt;Clone repo  &lt;/p&gt;
 
-&lt;p&gt;List stash
-&amp;gt; git stash list&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git clone –branch master –depth 1 https://github.com/nginx/nginx.git&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Apply top of stash and remove
-&amp;gt; git stash pop&lt;/p&gt;
+&lt;p&gt;Download a single file from the bitbucket server  &lt;/p&gt;
 
-&lt;p&gt;Undo last commit&lt;br /&gt;
-&amp;gt; git reset –soft HEAD~1
-&amp;gt; git reset –hard HEAD~1&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;wget –user=msbanik –ask-password https://bitbucket.org/centos.txt&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;CRLF&lt;br /&gt;
-&amp;gt; git config core.autocrlf true&lt;/p&gt;
+&lt;p&gt;Ammend last commit message  &lt;/p&gt;
 
-&lt;p&gt;Revert changes made to your working copy&lt;br /&gt;
-&amp;gt; git checkout .&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git commit –amend -m “New commit message”&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Revert changes made to the index (i.e., that you have added)&lt;br /&gt;
-&amp;gt; git reset&lt;/p&gt;
+&lt;p&gt;Diff against a stash  &lt;/p&gt;
 
-&lt;p&gt;Revert a change that you have committed&lt;br /&gt;
-&amp;gt; git revert …&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git stash show -p stash@{0}&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;List config
-&amp;gt; git config -l&lt;/p&gt;
+&lt;p&gt;List stash&lt;/p&gt;
 
-&lt;p&gt;Remove unstage local changes
-&amp;gt; git checkout path/to/file/to/revert 
-&amp;gt; git checkout – .&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git stash list&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Listing branch
-&amp;gt; git branch –list&lt;/p&gt;
+&lt;p&gt;Apply top of stash and remove&lt;/p&gt;
 
-&lt;p&gt;Remove branch
-&amp;gt; git branch -d branch_name&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git stash pop&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Create a branch develop, based on origin master
-&amp;gt; git checkout origin/master -b develop&lt;/p&gt;
+&lt;p&gt;Undo last commit  &lt;/p&gt;
 
-&lt;p&gt;Set upstream or remote tracking for a branch
-&amp;gt; git branch -u origin/master&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;git reset –soft HEAD~1
+git reset –hard HEAD~1&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;Store windows password&lt;br /&gt;
-&amp;gt; http://gitcredentialstore.codeplex.com/&lt;/p&gt;
+&lt;p&gt;CRLF  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git config core.autocrlf true&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Revert changes made to your working copy  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git checkout .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Revert changes made to the index (i.e., that you have added)  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git reset&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Revert a change that you have committed  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git revert …&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;List config&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git config -l&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Remove unstage local changes&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git checkout path/to/file/to/revert 
+git checkout – .&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Listing branch&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git branch –list&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Remove branch&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git branch -d branch_name&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Create a branch develop, based on origin master&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git checkout origin/master -b develop&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Set upstream or remote tracking for a branch&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;git branch -u origin/master&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Store windows password  &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;http://gitcredentialstore.codeplex.com/&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 06 Jul 2015 12:42:26 -0700</pubDate>
         <link>http://msbanik.com/git/update/2015/07/06/welcome-to-git.html</link>

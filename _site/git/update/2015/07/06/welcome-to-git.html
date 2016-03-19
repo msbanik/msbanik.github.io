@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Welcome to git!</title>
-  <meta name="description" content="Basic commandsCherry pick a single commit&gt;  git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1">
+  <meta name="description" content="Basic commandsCherry pick a single commit">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://msbanik.com/git/update/2015/07/06/welcome-to-git.html">
@@ -58,70 +58,133 @@
 
   <article class="post-content">
     <h2 id="basic-commands">Basic commands</h2>
-<p>Cherry pick a single commit
-&gt;  git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1</p>
+<p>Cherry pick a single commit</p>
 
-<p>Create gitignore file
-&gt; joe python jetbrains &gt; .gitignore</p>
+<blockquote>
+  <p>git cherry-pick 5a4db2f512d8b72fbb36eca790f9d8e2215d63a1</p>
+</blockquote>
 
-<p>Install git
-&gt; sudo apt-get install git-core bash-completion</p>
+<p>Create gitignore file</p>
 
-<p>Clone repo<br />
-&gt; git clone –branch master –depth 1 https://github.com/nginx/nginx.git</p>
+<blockquote>
+  <p>joe python jetbrains &gt; .gitignore</p>
+</blockquote>
 
-<p>Download a single file from the bitbucket server<br />
-&gt; wget –user=msbanik –ask-password https://bitbucket.org/msbanik/bootstrap/raw/master/bash/aliases/centos.txt</p>
+<p>Install git</p>
 
-<p>Ammend last commit message<br />
-&gt; git commit –amend -m “New commit message”</p>
+<blockquote>
+  <p>sudo apt-get install git-core bash-completion</p>
+</blockquote>
 
-<p>Diff against a stash<br />
-&gt; git stash show -p stash@{0}</p>
+<p>Clone repo  </p>
 
-<p>List stash
-&gt; git stash list</p>
+<blockquote>
+  <p>git clone –branch master –depth 1 https://github.com/nginx/nginx.git</p>
+</blockquote>
 
-<p>Apply top of stash and remove
-&gt; git stash pop</p>
+<p>Download a single file from the bitbucket server  </p>
 
-<p>Undo last commit<br />
-&gt; git reset –soft HEAD~1
-&gt; git reset –hard HEAD~1</p>
+<blockquote>
+  <p>wget –user=msbanik –ask-password https://bitbucket.org/centos.txt</p>
+</blockquote>
 
-<p>CRLF<br />
-&gt; git config core.autocrlf true</p>
+<p>Ammend last commit message  </p>
 
-<p>Revert changes made to your working copy<br />
-&gt; git checkout .</p>
+<blockquote>
+  <p>git commit –amend -m “New commit message”</p>
+</blockquote>
 
-<p>Revert changes made to the index (i.e., that you have added)<br />
-&gt; git reset</p>
+<p>Diff against a stash  </p>
 
-<p>Revert a change that you have committed<br />
-&gt; git revert …</p>
+<blockquote>
+  <p>git stash show -p stash@{0}</p>
+</blockquote>
 
-<p>List config
-&gt; git config -l</p>
+<p>List stash</p>
 
-<p>Remove unstage local changes
-&gt; git checkout path/to/file/to/revert 
-&gt; git checkout – .</p>
+<blockquote>
+  <p>git stash list</p>
+</blockquote>
 
-<p>Listing branch
-&gt; git branch –list</p>
+<p>Apply top of stash and remove</p>
 
-<p>Remove branch
-&gt; git branch -d branch_name</p>
+<blockquote>
+  <p>git stash pop</p>
+</blockquote>
 
-<p>Create a branch develop, based on origin master
-&gt; git checkout origin/master -b develop</p>
+<p>Undo last commit  </p>
 
-<p>Set upstream or remote tracking for a branch
-&gt; git branch -u origin/master</p>
+<blockquote>
+  <p>git reset –soft HEAD~1
+git reset –hard HEAD~1</p>
+</blockquote>
 
-<p>Store windows password<br />
-&gt; http://gitcredentialstore.codeplex.com/</p>
+<p>CRLF  </p>
+
+<blockquote>
+  <p>git config core.autocrlf true</p>
+</blockquote>
+
+<p>Revert changes made to your working copy  </p>
+
+<blockquote>
+  <p>git checkout .</p>
+</blockquote>
+
+<p>Revert changes made to the index (i.e., that you have added)  </p>
+
+<blockquote>
+  <p>git reset</p>
+</blockquote>
+
+<p>Revert a change that you have committed  </p>
+
+<blockquote>
+  <p>git revert …</p>
+</blockquote>
+
+<p>List config</p>
+
+<blockquote>
+  <p>git config -l</p>
+</blockquote>
+
+<p>Remove unstage local changes</p>
+
+<blockquote>
+  <p>git checkout path/to/file/to/revert 
+git checkout – .</p>
+</blockquote>
+
+<p>Listing branch</p>
+
+<blockquote>
+  <p>git branch –list</p>
+</blockquote>
+
+<p>Remove branch</p>
+
+<blockquote>
+  <p>git branch -d branch_name</p>
+</blockquote>
+
+<p>Create a branch develop, based on origin master</p>
+
+<blockquote>
+  <p>git checkout origin/master -b develop</p>
+</blockquote>
+
+<p>Set upstream or remote tracking for a branch</p>
+
+<blockquote>
+  <p>git branch -u origin/master</p>
+</blockquote>
+
+<p>Store windows password  </p>
+
+<blockquote>
+  <p>http://gitcredentialstore.codeplex.com/</p>
+</blockquote>
 
   </article>
 
